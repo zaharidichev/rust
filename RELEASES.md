@@ -9,7 +9,7 @@ Language
 Compiler
 -----------------------
 - [Added tier 3\* support for the `armv5te-unknown-linux-uclibceabi` target.][78142]
-- [Added tier 3 support for the `aarch64_apple_ios_macabi` target.][77484]
+- [Added tier 3 support for the `aarch64-apple-ios-macabi` target.][77484]
 - [The `x86_64-unknown-freebsd` is now built with the full toolset.][79484]
 
 \* Refer to Rust's [platform support page][forge-platform-support] for more
