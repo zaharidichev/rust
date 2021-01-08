@@ -60,7 +60,7 @@ Cargo
 Misc
 ----
 
-- [The search results tab and help button are focusable with keyboard in rustdoc.][79896]
+- [The search results tab and the help button are focusable with keyboard in rustdoc.][79896]
 - [Running tests will now print the total time taken to execute.][75752]
 
 Compatibility Notes
