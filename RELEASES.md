@@ -8,7 +8,7 @@ Language
 
 Compiler
 -----------------------
-- [Added tier 3\* support for the `armv5te-unknown-linux-uclibcgnueabi` target.][78142]
+- [Added tier 3\* support for the `armv5te-unknown-linux-uclibceabi` target.][78142]
 - [Added tier 3 support for the `aarch64_apple_ios_macabi` target.][77484]
 - [The `x86_64-unknown-freebsd` is now built with the full toolset.][79484]
 
@@ -70,7 +70,7 @@ Compatibility Notes
   recommended to use the `compare_exchange` and `compare_exchange_weak` methods instead.
 - [Changes in how `TokenStream`s are checked have fixed some cases where you could write
   unhygenic `macro_rules!` macros.][79472]
-- [Using `#![test]` as an inner attribute is now a hard error.][79003]
+- [`#![test]` as an inner attribute is now considered unstable like other inner macro attributes, and reports an error by default through the `soft_unstable` lint.][79003]
 - [Overriding a `forbid` lint at the same level that it was set is now a hard error.][78864]
 - [Dropped support for all cloudabi targets.][78439]
 - [You can no longer intercept `panic!` calls by supplying your own macro.][78343] It's
