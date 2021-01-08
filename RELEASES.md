@@ -76,7 +76,7 @@ Compatibility Notes
 - [You can no longer intercept `panic!` calls by supplying your own macro.][78343] It's
   recommended to use the `#[panic_handler]` attribute to provide your own implementation.
 - [Semi-colons after item statements (e.g. `struct Foo {};`) now produce a warning.][78296]
-- [Panics in `drop` implementations no cause return values in functions to be leaked.][78373]
+- [Panics in `drop` implementations no longer cause return values in functions to be leaked.][78373]
 
 [79261]: https://github.com/rust-lang/rust/pull/79261
 [79896]: https://github.com/rust-lang/rust/pull/79896
