@@ -52,8 +52,8 @@ Cargo
 
 - [Added the `[build.rustc-workspace-wrapper]` option.][cargo/8976]
   This option sets the `rustc` wrapper to use to build workspace members.
-- [`cargo:rerun-if-changed` will now if provided a directory scan the entire
-  contents of the directory for changes.][cargo/8973]
+- [`cargo:rerun-if-changed` will now, if provided a directory, scan the entire
+  contents of that directory for changes.][cargo/8973]
 - [Periods (`.`) are now allowed in feature names.][cargo/8932]
 - [Added the `--workspace` flag to the `cargo update` command.][cargo/8725]
 
