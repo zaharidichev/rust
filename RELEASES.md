@@ -19,6 +19,7 @@ Libraries
 -----------------------
 
 - [`proc_macro::Punct` now implements `PartialEq<char>`.][78636]
+- [`ops::{Index, IndexMut}` are now implemented for fixed sized arrays of any length.][74989]
 - [On Unix platforms, the `std::fs::File` type now has a "niche" of `-1`.][74699]
   This value cannot be a valid file descriptor, and now means `Option<File>` takes
   up the same amount of space as `File`.
@@ -54,7 +55,6 @@ Cargo
   This option sets a wrapper to execute instead of `rustc`, for workspace members only.
 - [`cargo:rerun-if-changed` will now, if provided a directory, scan the entire
   contents of that directory for changes.][cargo/8973]
-- [Periods (`.`) are now allowed in feature names.][cargo/8932]
 - [Added the `--workspace` flag to the `cargo update` command.][cargo/8725]
 
 Misc
@@ -78,6 +78,7 @@ Compatibility Notes
 - [Semi-colons after item statements (e.g. `struct Foo {};`) now produce a warning.][78296]
 - [Panics in `drop` implementations no longer cause return values in functions to be leaked.][78373]
 
+[74989]: https://github.com/rust-lang/rust/pull/74989
 [79261]: https://github.com/rust-lang/rust/pull/79261
 [79896]: https://github.com/rust-lang/rust/pull/79896
 [79484]: https://github.com/rust-lang/rust/pull/79484
@@ -97,7 +98,6 @@ Compatibility Notes
 [77484]: https://github.com/rust-lang/rust/pull/77484
 [cargo/8976]: https://github.com/rust-lang/cargo/pull/8976
 [cargo/8973]: https://github.com/rust-lang/cargo/pull/8973
-[cargo/8932]: https://github.com/rust-lang/cargo/pull/8932
 [cargo/8725]: https://github.com/rust-lang/cargo/pull/8725
 [`IpAddr::is_ipv4`]: https://doc.rust-lang.org/stable/std/net/enum.IpAddr.html#method.is_ipv4
 [`IpAddr::is_ipv6`]: https://doc.rust-lang.org/stable/std/net/enum.IpAddr.html#method.is_ipv6
