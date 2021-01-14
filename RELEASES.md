@@ -3,7 +3,7 @@ Version 1.50.0 (2021-02-11)
 
 Language
 -----------------------
-- [You can now use `const` values for `T` in `[T; N]` array expressions.][79270]
+- [You can now use `const` values for `x` in `[x; N]` array expressions.][79270]
 - [Assignments to `ManuallyDrop<T>` union fields are now considered safe.][78068]
 
 Compiler
