@@ -27,12 +27,15 @@ Libraries
 Stabilized APIs
 ---------------
 
-- [`UnsafeCell::get_mut`]
 - [`bool::then`]
-- [`RefCell::take`]
 - [`btree_map::Entry::or_insert_with_key`]
+- [`f32::clamp`]
+- [`f64::clamp`]
 - [`hash_map::Entry::or_insert_with_key`]
+- [`Ord::clamp`]
+- [`RefCell::take`]
 - [`slice::fill`]
+- [`UnsafeCell::get_mut`]
 
 The following previously stable methods are now `const`.
 
