@@ -74,13 +74,13 @@ Compatibility Notes
   recommended to use the `compare_exchange` and `compare_exchange_weak` methods instead.
 - [Changes in how `TokenStream`s are checked have fixed some cases where you could write
   unhygenic `macro_rules!` macros.][79472]
-- [`#![test]` as an inner attribute is now considered unstable like other inner macro attributes, and reports an error by default through the `soft_unstable` lint.][79003]
+- [`#![test]` as an inner attribute is now considered unstable like other inner macro
+  attributes, and reports an error by default through the `soft_unstable` lint.][79003]
 - [Overriding a `forbid` lint at the same level that it was set is now a hard error.][78864]
 - [Dropped support for all cloudabi targets.][78439]
 - [You can no longer intercept `panic!` calls by supplying your own macro.][78343] It's
   recommended to use the `#[panic_handler]` attribute to provide your own implementation.
 - [Semi-colons after item statements (e.g. `struct Foo {};`) now produce a warning.][78296]
-- [Panics in `drop` implementations no longer cause return values in functions to be leaked.][78373]
 
 [74989]: https://github.com/rust-lang/rust/pull/74989
 [79261]: https://github.com/rust-lang/rust/pull/79261
@@ -92,7 +92,6 @@ Compatibility Notes
 [78864]: https://github.com/rust-lang/rust/pull/78864
 [78636]: https://github.com/rust-lang/rust/pull/78636
 [78439]: https://github.com/rust-lang/rust/pull/78439
-[78373]: https://github.com/rust-lang/rust/pull/78373
 [78343]: https://github.com/rust-lang/rust/pull/78343
 [78296]: https://github.com/rust-lang/rust/pull/78296
 [78068]: https://github.com/rust-lang/rust/pull/78068
