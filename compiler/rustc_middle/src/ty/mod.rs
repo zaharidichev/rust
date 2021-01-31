@@ -85,7 +85,7 @@ pub use rustc_type_ir::*;
 pub use self::binding::BindingMode;
 pub use self::binding::BindingMode::*;
 
-pub use self::context::{tls, FreeRegionInfo, TyCtxt};
+pub use self::context::{tls, FreeRegionInfo, TyCtxt, TyInterner};
 pub use self::context::{
     CanonicalUserType, CanonicalUserTypeAnnotation, CanonicalUserTypeAnnotations,
     DelaySpanBugEmitted, ResolvedOpaqueTy, UserType, UserTypeAnnotationIndex,
